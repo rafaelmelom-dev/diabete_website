@@ -9,8 +9,9 @@ const handleIntersection = (entries, observer) => {
 
 const observer = new IntersectionObserver(handleIntersection, {
     root: null,
-    threshold: 1
+    threshold: 0.75
 })
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

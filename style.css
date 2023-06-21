@@ -160,5 +160,60 @@ a {
     margin-right: 20px;
 }
 
+@media only screen and (max-width:550px) {
+    .header {
+        font-size: 4vw;
+        height: 6vh;
+        width: 100%;
+    }
+    
+    .header-left {
+        font-size: 5vw;
+        margin-left: 10px;
+        width: 30%;
+    }
+    
+    .header-right {
+        margin-left: 50%;
+        width: 70%;
+    }
+    
 
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content.active {
+        opacity: 1;
+    }
+    
+    .content-left {
+        height: 40%;
+        width: 100%;
+        font-size: 5.5vw;
+    }
+    
+    .content-right {
+        height: 60%;
+        width: 100%;
+        font-size: 4.5vw;
+    }
+
+    .content-2 {
+        flex-direction: column;
+    }
+
+    .content-left-2 {
+        height: 40%;
+        width: 100%;
+        font-size: 5.5vw;
+    }
+
+    .content-right-2 {
+        height: 60%;
+        width: 100%;
+        font-size: 4.5vw;
+    }
+}
 
