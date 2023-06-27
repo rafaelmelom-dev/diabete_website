@@ -144,6 +144,8 @@ a {
     background: lightpink;
 }
 
+
+
 .content-right-2 > p {
     line-height: 1.2;
     text-align: left;
@@ -159,6 +161,29 @@ a {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.graph {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.graph.active {
+    opacity: 1;
+}
+
+.chart {     
+    height: auto;
+    width: 90%;
+    margin: 5% auto;
+}
+
+
 
 @media only screen and (max-width:550px) {
     .header {
@@ -215,5 +240,12 @@ a {
         width: 100%;
         font-size: 4.5vw;
     }
+
+    .chart {     
+        height: 90%;
+        width: 100%;
+        margin: 15% auto;
+    }
+    
 }
 
